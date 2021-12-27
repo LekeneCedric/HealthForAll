@@ -30,7 +30,7 @@
             </Pane>
             <Button defaultButton="true" graphicTextGap="20.0" lineSpacing="2.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="374.0" style="-fx-background-color: #254117; -fx-effect: red;" text="Bilan de Sante" textFill="WHITE" textOverrun="CLIP">
                <font>
-                  <Font name="Roboto Medium" size="18.0" />
+                  <Font name="Mongolian Baiti" size="18.0" />
                </font>
                <graphic>
                   <FontAwesomeIconView fill="#ff1414" glyphName="PLUS" size="20" />
@@ -68,6 +68,5 @@
             </Button>
          </children>
       </VBox>
-      <Button layoutX="692.0" layoutY="284.0" mnemonicParsing="false" text="Button" />
    </children>
 </AnchorPane>
