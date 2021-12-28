@@ -9,6 +9,7 @@ module com.example.healthforall {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires mongo.java.driver;
 
     opens com.example.healthforall to javafx.fxml;
     exports com.example.healthforall;

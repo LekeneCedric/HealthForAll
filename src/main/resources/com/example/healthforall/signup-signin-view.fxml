@@ -48,7 +48,7 @@
                                  <children>
                                     <TextField fx:id="signupUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #254117; -fx-font: #254117;" />
                                     <TextField fx:id="signupLastname" layoutX="168.0" layoutY="189.0" promptText="LastName" style="-fx-border-color: #254117;" />
-                                    <Button layoutX="168.0" layoutY="377.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #254117;" text="SIGN UP" textFill="WHITE" />
+                                    <Button layoutX="168.0" layoutY="377.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #254117;" text="SIGN UP" textFill="WHITE" />
                                     <Line endX="275.0" endY="-7.0" layoutX="237.0" layoutY="50.0" startX="-237.0" startY="-7.0" />
                                     <Label layoutX="25.0" layoutY="14.0" prefHeight="16.0" prefWidth="150.0" text="CREATE AN ACCOUNT " textFill="#1a4d22" />
                                     <Button fx:id="switchsignin" layoutX="398.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: #fff;" text="Sign in" textFill="#269a66" underline="true" />
@@ -59,6 +59,7 @@
                                     <TextField fx:id="signupPassword" cache="true" layoutX="168.0" layoutY="301.0" promptText="Password" style="-fx-border-color: #254117;" />
                                     <Label layoutX="115.0" layoutY="248.0" prefHeight="16.0" prefWidth="49.0" text="e-mail:" />
                                     <Label layoutX="92.0" layoutY="306.0" text="Passsword:" />
+                                    <Label fx:id="registerMessage" alignment="CENTER" layoutX="15.0" layoutY="79.0" prefHeight="17.0" prefWidth="484.0" />
                                  </children>
                               </AnchorPane>
                            </children>

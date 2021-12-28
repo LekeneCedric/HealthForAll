@@ -37,5 +37,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.7.1" level="project" />
     <orderEntry type="library" name="charm-glisten-4.4.1" level="project" />
     <orderEntry type="library" name="Compressed" level="project" />
+    <orderEntry type="library" name="mongo-java-driver-3.12.10" level="project" />
   </component>
 </module>
