@@ -93,6 +93,7 @@ public class HelloController {
         catch (Exception e)
         {
             registerMessage.setText(e.getMessage());
+            System.out.println("Heelloo");
         }
 
     }
