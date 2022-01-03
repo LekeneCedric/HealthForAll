@@ -22,6 +22,8 @@ public class HelloController {
     private TabPane signBar;
     @FXML
     private Label info;
+    @FXML
+    private Label labeltest;
 
     @FXML
     private Button signIn;
