@@ -5,6 +5,7 @@ import com.mongodb.MongoClientURI;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import com.mongodb.MongoClient;
@@ -18,6 +19,38 @@ public class HelloController {
 
     MongoDatabase mongoDatabase = mongoClient.getDatabase("HealthForAll");
     MongoCollection auth = mongoDatabase.getCollection("authentification");
+    @FXML
+    private Button bilanSante;
+
+    @FXML
+    private Button exit;
+
+    @FXML
+    private Button testCovid;
+
+    @FXML
+    private Button traitements;
+
+    @FXML
+    void bilan(ActionEvent event) {
+
+    }
+
+    @FXML
+    void covid(ActionEvent event) {
+
+    }
+
+    @FXML
+    void exit(ActionEvent event) {
+
+    }
+
+    @FXML
+    void traitements(ActionEvent event) {
+
+    }
+
     @FXML
     private TabPane signBar;
     @FXML
@@ -97,6 +130,12 @@ public class HelloController {
         }
 
     }
+    @FXML
+    protected void bilan()
+    {
+        System.out.println("bilan");
+    }
+
 
 
 }

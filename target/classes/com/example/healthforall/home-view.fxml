@@ -11,7 +11,7 @@
          <left>
             <VBox prefHeight="741.0" prefWidth="287.0" style="-fx-background-color: #EBF5FB;" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="bilanSante" mnemonicParsing="false" prefHeight="41.0" prefWidth="232.0" style="-fx-background-color: #82E0AA;" text="Bilan de Sante" textFill="WHITE">
+                  <Button fx:id="bilanSante" mnemonicParsing="false" onAction="#bilan" prefHeight="41.0" prefWidth="232.0" style="-fx-background-color: #82E0AA;" text="Bilan de Sante" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="30.0" top="150.0" />
                      </VBox.margin>
@@ -19,7 +19,7 @@
                         <FontAwesomeIconView glyphName="HEART" selectionFill="#fc0000" size="18" wrappingWidth="24.0" />
                      </graphic>
                   </Button>
-                  <Button fx:id="testCovid" mnemonicParsing="false" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #82E0AA;" text="Test Covid" textFill="WHITE">
+                  <Button fx:id="testCovid" mnemonicParsing="false" onAction="#covid" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #82E0AA;" text="Test Covid" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="30.0" top="40.0" />
                      </VBox.margin>
@@ -27,7 +27,7 @@
                         <FontAwesomeIconView glyphName="USER" selectionFill="#c3a3a3" size="18" wrappingWidth="39.0" />
                      </graphic>
                   </Button>
-                  <Button fx:id="traitements" mnemonicParsing="false" prefHeight="38.0" prefWidth="229.0" style="-fx-background-color: #82E0AA;" text="Traitements medicaux " textFill="WHITE">
+                  <Button fx:id="traitements" mnemonicParsing="false" onAction="#traitements" prefHeight="38.0" prefWidth="229.0" style="-fx-background-color: #82E0AA;" text="Traitements medicaux " textFill="WHITE">
                      <VBox.margin>
                         <Insets left="30.0" top="40.0" />
                      </VBox.margin>
@@ -35,7 +35,7 @@
                         <FontAwesomeIconView glyphName="LIST" selectionFill="#03391e" size="18" wrappingWidth="29.0" />
                      </graphic>
                   </Button>
-                  <Button fx:id="exit" mnemonicParsing="false" prefHeight="33.0" prefWidth="227.0" style="-fx-background-color: #C0392B;" text="Exit" textFill="WHITE">
+                  <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="227.0" style="-fx-background-color: #C0392B;" text="Exit" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="30.0" top="200.0" />
                      </VBox.margin>
