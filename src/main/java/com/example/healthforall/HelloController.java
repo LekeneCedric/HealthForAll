@@ -130,11 +130,6 @@ public class HelloController {
         }
 
     }
-    @FXML
-    protected void bilan()
-    {
-        System.out.println("bilan");
-    }
 
 
 
