@@ -12,7 +12,7 @@ public class FxmlLoader {
     public Pane getView (String filename)
     {
             try {
-                    URL link =HelloApplication.class.getResource("target/classes/com/example/healthforall/hello-view"+filename+".fxml");
+                    URL link =HelloApplication.class.getResource("src/main/resources/com.example.healthforall/"+filename+".fxml");
                     if(link == null)
                     {
                         System.out.println("Erreur lors du chargement de la page");

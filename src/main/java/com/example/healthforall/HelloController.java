@@ -7,6 +7,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 import com.mongodb.MongoClient;
 import org.bson.Document;
@@ -33,6 +34,8 @@ public class HelloController {
 
     @FXML
     void bilan(ActionEvent event) {
+    FxmlLoader page = new FxmlLoader();
+    Pane View = page.getView("");
 
     }
 
