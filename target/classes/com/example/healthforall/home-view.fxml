@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane layoutX="-1.0" layoutY="-1.0" prefHeight="741.0" prefWidth="1107.0">
+      <BorderPane layoutX="8.0" layoutY="-3.0" prefHeight="741.0" prefWidth="1107.0">
          <left>
             <VBox prefHeight="741.0" prefWidth="287.0" style="-fx-background-color: #EBF5FB;" BorderPane.alignment="CENTER">
                <children>
@@ -18,7 +18,7 @@
                         <Insets left="30.0" top="150.0" />
                      </VBox.margin>
                      <graphic>
-                        <FontAwesomeIconView glyphName="HEART" selectionFill="#f80000" size="18" wrappingWidth="70.0" />
+                        <FontAwesomeIconView glyphName="HEART" selectionFill="#f80000" size="18" wrappingWidth="24.0" />
                      </graphic>
                   </Button>
                   <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #82E0AA;" text="Test Covid" textFill="WHITE">
@@ -26,7 +26,7 @@
                         <Insets left="30.0" top="40.0" />
                      </VBox.margin>
                      <graphic>
-                        <FontAwesomeIconView glyphName="USER" size="18" wrappingWidth="85.0" />
+                        <FontAwesomeIconView glyphName="USER" size="18" wrappingWidth="39.0" />
                      </graphic>
                   </Button>
                   <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="229.0" style="-fx-background-color: #82E0AA;" text="Traitements medicaux " textFill="WHITE">
@@ -34,7 +34,7 @@
                         <Insets left="30.0" top="40.0" />
                      </VBox.margin>
                      <graphic>
-                        <FontAwesomeIconView glyphName="LIST" selectionFill="#03391e" size="18" wrappingWidth="30.0" />
+                        <FontAwesomeIconView glyphName="LIST" selectionFill="#03391e" size="18" wrappingWidth="29.0" />
                      </graphic>
                   </Button>
                   <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="227.0" style="-fx-background-color: #C0392B;" text="Exit" textFill="WHITE">
@@ -42,7 +42,7 @@
                         <Insets left="30.0" top="200.0" />
                      </VBox.margin>
                      <graphic>
-                        <FontAwesomeIconView glyphName="SHARE" size="18" wrappingWidth="49.0" />
+                        <FontAwesomeIconView glyphName="SHARE" size="18" wrappingWidth="37.0" />
                      </graphic>
                   </Button>
                </children>
