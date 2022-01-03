@@ -1,49 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane layoutX="8.0" layoutY="-3.0" prefHeight="741.0" prefWidth="1107.0">
+      <BorderPane layoutX="-1.0" prefHeight="720.0" prefWidth="1260.0">
          <left>
-            <VBox prefHeight="741.0" prefWidth="287.0" style="-fx-background-color: #EBF5FB;" BorderPane.alignment="CENTER">
+            <VBox prefHeight="720.0" prefWidth="249.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="232.0" style="-fx-background-color: #82E0AA;" text="Bilan de Sante" textFill="WHITE">
+                  <Label prefHeight="48.0" prefWidth="217.0" text="           HealthForAll" textFill="#0d7c29">
                      <VBox.margin>
-                        <Insets left="30.0" top="150.0" />
+                        <Insets left="10.0" top="20.0" />
                      </VBox.margin>
-                     <graphic>
-                        <FontAwesomeIconView glyphName="HEART" selectionFill="#f80000" size="18" wrappingWidth="24.0" />
-                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="231.0" text="Button">
+                     <VBox.margin>
+                        <Insets left="10.0" top="150.0" />
+                     </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #82E0AA;" text="Test Covid" textFill="WHITE">
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="231.0" text="Button">
                      <VBox.margin>
-                        <Insets left="30.0" top="40.0" />
+                        <Insets left="10.0" top="40.0" />
                      </VBox.margin>
-                     <graphic>
-                        <FontAwesomeIconView glyphName="USER" size="18" wrappingWidth="39.0" />
-                     </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="229.0" style="-fx-background-color: #82E0AA;" text="Traitements medicaux " textFill="WHITE">
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="231.0" text="Button">
                      <VBox.margin>
-                        <Insets left="30.0" top="40.0" />
+                        <Insets left="10.0" top="40.0" />
                      </VBox.margin>
-                     <graphic>
-                        <FontAwesomeIconView glyphName="LIST" selectionFill="#03391e" size="18" wrappingWidth="29.0" />
-                     </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="227.0" style="-fx-background-color: #C0392B;" text="Exit" textFill="WHITE">
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="231.0" text="Button">
                      <VBox.margin>
-                        <Insets left="30.0" top="200.0" />
+                        <Insets left="10.0" top="200.0" />
                      </VBox.margin>
-                     <graphic>
-                        <FontAwesomeIconView glyphName="SHARE" size="18" wrappingWidth="37.0" />
-                     </graphic>
                   </Button>
                </children>
             </VBox>
