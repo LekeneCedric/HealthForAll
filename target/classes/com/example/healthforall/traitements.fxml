@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.TraitementController">
+<AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.TraitementController">
    <children>
-      <Label alignment="CENTER" layoutX="184.0" layoutY="24.0" prefHeight="60.0" prefWidth="464.0" text="TRAITEMENTS MEDICAUX :" textAlignment="JUSTIFY" underline="true">
+      <Label alignment="CENTER" layoutX="184.0" layoutY="24.0" prefHeight="60.0" prefWidth="464.0" text="TRAITEMENTS MEDICAUX" textAlignment="JUSTIFY" underline="true">
          <font>
             <Font name="Consolas Italic" size="26.0" />
          </font>

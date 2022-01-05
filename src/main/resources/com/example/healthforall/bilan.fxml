@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="541.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.BilanController">
+<AnchorPane prefHeight="541.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.BilanController">
    <children>
       <Label alignment="CENTER" layoutX="174.0" layoutY="14.0" prefHeight="60.0" prefWidth="464.0" text="BILAN COMPLET DE SANTE" textAlignment="JUSTIFY" underline="true">
          <font>
@@ -48,7 +45,12 @@
       </Label>
       <ScrollPane layoutX="3.0" layoutY="109.0" prefHeight="432.0" prefWidth="805.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="2000.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="2000.0">
+               <children>
+                  <Label layoutX="76.0" layoutY="41.0" prefHeight="17.0" prefWidth="216.0" text="Label" />
+                  <CheckBox layoutX="267.0" layoutY="41.0" mnemonicParsing="false" text="CheckBox" />
+                  <CheckBox layoutX="378.0" layoutY="41.0" mnemonicParsing="false" text="CheckBox" />
+               </children></AnchorPane>
         </content>
       </ScrollPane>
    </children>
