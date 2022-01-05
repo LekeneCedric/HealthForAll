@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.HelloController">
    <children>
-      <BorderPane layoutY="-3.0" prefHeight="741.0" prefWidth="1107.0">
+      <BorderPane  fx:id="borderPane" layoutY="-3.0" prefHeight="741.0" prefWidth="1107.0">
          <left>
             <VBox prefHeight="741.0" prefWidth="287.0" style="-fx-background-color: #EBF5FB;" BorderPane.alignment="CENTER">
                <children>

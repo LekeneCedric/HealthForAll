@@ -10,6 +10,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 import com.mongodb.MongoClient;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import org.bson.Document;
 
 
@@ -20,6 +22,8 @@ public class HelloController {
 
     MongoDatabase mongoDatabase = mongoClient.getDatabase("HealthForAll");
     MongoCollection auth = mongoDatabase.getCollection("authentification");
+    @FXML
+    protected BorderPane borderPane;
     @FXML
     private Button bilanSante;
 
@@ -35,7 +39,8 @@ public class HelloController {
     @FXML
     void bilan(ActionEvent event) {
     FxmlLoader page = new FxmlLoader();
-    Pane View = page.getView("");
+    Pane View = page.getView("bilan");
+    borderPane.setCenter(View);
 
     }
 
