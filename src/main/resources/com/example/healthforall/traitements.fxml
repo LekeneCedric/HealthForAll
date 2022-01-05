@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.healthforall.TraitementController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.TraitementController">
+   <children>
+      <Label alignment="CENTER" layoutX="184.0" layoutY="24.0" prefHeight="60.0" prefWidth="464.0" text="TRAITEMENTS MEDICAUX :" textAlignment="JUSTIFY" underline="true">
+         <font>
+            <Font name="Consolas Italic" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.050316765904426575" green="0.09210526198148727" blue="0.04093567281961441" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05147417262196541" green="0.8552631735801697" blue="0.3595932722091675" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
 </AnchorPane>

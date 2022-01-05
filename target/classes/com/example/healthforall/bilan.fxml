@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="561.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.BilanController">
+<AnchorPane prefHeight="541.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.BilanController">
    <children>
-      <Label alignment="CENTER" layoutX="171.0" layoutY="14.0" prefHeight="60.0" prefWidth="464.0" text="BILAN COMPLET DE SANTE" textAlignment="JUSTIFY" underline="true">
+      <Label alignment="CENTER" layoutX="174.0" layoutY="14.0" prefHeight="60.0" prefWidth="464.0" text="BILAN COMPLET DE SANTE" textAlignment="JUSTIFY" underline="true">
          <font>
             <Font name="Consolas Italic" size="26.0" />
          </font>
@@ -45,5 +46,10 @@
             <Font name="Consolas Italic" size="14.0" />
          </font>
       </Label>
+      <ScrollPane layoutX="3.0" layoutY="109.0" prefHeight="432.0" prefWidth="805.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="2000.0" />
+        </content>
+      </ScrollPane>
    </children>
 </AnchorPane>

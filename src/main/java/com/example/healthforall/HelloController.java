@@ -46,7 +46,9 @@ public class HelloController {
 
     @FXML
     void covid(ActionEvent event) {
-
+        FxmlLoader page = new FxmlLoader();
+        Pane View = page.getView("covidtest");
+        borderPane.setCenter(View);
     }
 
     @FXML
@@ -56,7 +58,9 @@ public class HelloController {
 
     @FXML
     void traitements(ActionEvent event) {
-
+        FxmlLoader page = new FxmlLoader();
+        Pane View = page.getView("traitements");
+        borderPane.setCenter(View);
     }
 
     @FXML

@@ -12,7 +12,7 @@ public class FxmlLoader {
     public Pane getView (String filename)
     {
             try {
-                    URL link =HelloApplication.class.getResource("bilan.fxml");
+                    URL link =HelloApplication.class.getResource(filename+".fxml");
                     if(link == null)
                     {
                         System.out.println("Erreur lors du chargement de la page");
