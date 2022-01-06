@@ -3,6 +3,7 @@ package com.example.healthforall;
 
 import com.mongodb.MongoClientURI;
 import com.mongodb.MongoClient;
+import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import javafx.event.ActionEvent;
@@ -15,12 +16,12 @@ import javafx.scene.layout.Pane;
 import org.bson.Document;
 
 
-public class HelloController {
+public class HelloController<MongoClientURI> {
     String uri = "mongodb://127.0.0.1:27017/?compressors=zlib&gssapiServiceName=mongodb";
     MongoClientURI clientURI = new MongoClientURI(uri);
     MongoClient mongoClient = new MongoClient(clientURI);
 
-    MongoDatabase mongoDatabase = mongoClient.getDatabase("HealthForAll");
+    MongoDatabase mongoDatabase = mongoClient.getDatabaseNames("HealthForAll");
     MongoCollection auth = mongoDatabase.getCollection("authentification");
     @FXML
     protected BorderPane borderPane;

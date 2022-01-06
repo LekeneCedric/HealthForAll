@@ -10,6 +10,8 @@ module com.example.healthforall {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires mongo.java.driver;
+    requires org.mongodb.driver.sync.client;
+    requires org.mongodb.bson;
 
     opens com.example.healthforall to javafx.fxml;
     exports com.example.healthforall;
