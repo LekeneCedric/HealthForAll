@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "61d70737bc1dd82c48438f90"
+  },
+  " Ingrédients_M1": "2 grosses betteraves + 2 pamplemousses",
+  "Ingrédients_M2": "Feuilles de manioc fraîche et petite boite de lait",
+  "Méthode1": "Rapper les deux betteraves et mettre le contenu dans 1 littre d'eau fraiche puis ajouter les deux pamplemousses et boire 3 verres par jour",
+  "Méthode2": "piler les feuilles de manioc, extraire le jus puis ajouter du lait. Boire 1 verre matin, un à midi et un le soir pendant 3 jours.j",
+  "nom": "Anemie"
+},{
+  "_id": {
+    "$oid": "61d70a3fbc1dd82c48438f91"
+  },
+  "Ingrédients": "Feuilles de choux, miel et compresse",
+  "Méthode": "Ecraser les feuilles de choux, les étendre sur la compresse et ajouter une couche de miel",
+  "nom": "Brûlures"
+}]
