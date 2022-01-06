@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "61d642e99f66163caf502184"
+  },
+  "Categorie": "Infection",
+  "medicament1": "Coartem",
+  "medicament2": "Malacur",
+  "nom": "Paludisme",
+  "notice1": "http://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0254964.htm#:~:text=La%20dose%20totale%20recommand%C3%A9e%20est,heures%20apr%C3%A8s%20la%20premi%C3%A8re%20prise.",
+  "notice2": "https://www.google.com/url?sa=t&source=web&rct=j&url=https://medicalguidelines.msf.org/viewport/EssDr/francais/dihydroartemisinine-piperaquine-dha-ppq-oral-16684818.html&ved=2ahUKEwiZsOm04Jr1AhWmzIUKHcoqA5gQFnoECAQQBQ&usg=AOvVaw3sVG62UwXY7N_xwkKGNape "
+},{
+  "_id": {
+    "$oid": "61d6441d9f66163caf502185"
+  },
+  "categorie": "infection",
+  "medicament1": "pharmagrip",
+  "medicament2": "Litacol",
+  "medicament3": "Clopidogrel/ticagrélor",
+  "nom": "grippe",
+  "notice1": "https://pillintrip.com/fr/medicine/pharmagrip ",
+  "notice2": "http://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0224799.htm ",
+  "notice3": "http://www.hc-sc.gc.ca/dhp-mps/index-fra.php    ||    https://www.coeuretavc.ca/maladies-du-coeur/traitements/medicaments/antiplaquettaires"
+},{
+  "_id": {
+    "$oid": "61d6472f9f66163caf502186"
+  },
+  "categorie": "Tumeur",
+  "medicaments et traitement adapté 1": "https://www.procure.ca/cancer-de-la-prostate/options-de-traitements/choisir-son-traitement/?gclid=Cj0KCQiAoNWOBhCwARIsAAiHnEhTKsuB300Ebb2ZiZlw_8XMJjSCpw0A070fykG1DxZmVpkD47VygmsaAvt6EALw_wcB#section4 ",
+  "medicaments et traitement adapté 2": "https://www.e-cancer.fr/Patients-et-proches/Les-cancers/Cancer-du-sein/Chimiotherapie/Medicaments-utilises ",
+  "nom": "cancer"
+},{
+  "_id": {
+    "$oid": "61d648219f66163caf502187"
+  },
+  "categorie": "Tumeur",
+  "medicament1": "Fludarabine",
+  "medicament2": "Bendamustine",
+  "nom": "Leucemie",
+  "notice1": "http://agence-prd.ansm.sante.fr/php/ecodex/notice/N0275724.htm ",
+  "notice2": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=65061182&typedoc=N "
+},{
+  "_id": {
+    "$oid": "61d6497c9f66163caf502188"
+  },
+  "Categorie": "infection",
+  "medicaments et notices": "https://bronchite.ooreka.fr/comprendre/traitement-bronchiolite ",
+  "nom": "Bronchiolite"
+},{
+  "_id": {
+    "$oid": "61d64a259f66163caf502189"
+  },
+  "categorie": "infection",
+  "medicament1": "Amoxicilline",
+  "medicaments2": "Autres",
+  "nom": "Pneumonie",
+  "notice1": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=67385172&typedoc=N#:~:text=La%20posologie%20habituelle%20d'AMOXICILLINE,par%20jour%20pendant%20un%20jour. \n\n",
+  "notices2": "https://www.vidal.fr/maladies/voies-respiratoires/pneumonie/traitements.html \n\n"
+},{
+  "_id": {
+    "$oid": "61d64b679f66163caf50218a"
+  },
+  "categorie": "Infection",
+  "medicaments": "Pyrazinamide/ethambuto/rifampicine/isoniazide",
+  "nom": "Tuberculose pulmonaire",
+  "notices": " https://www.doctissimo.fr/medicament-PIRILENE.htm#:~:text=Adulte%20%3A%203%20%C3%A0%204%20comprim%C3%A9s,formes%20s%C3%A9v%C3%A8res%20de%20la%20maladie. \nhttps://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?typedoc=N&specid=67876901\n"
+}]
