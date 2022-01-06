@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class main {
-
+     //code pour formulaire sante //
     public static void affiche (Maladie[] maladie,int taille) {
         for (int i = 0; i < taille; i++) {
             System.out.println(maladie[i].getNom_maladie() + " : " + maladie[i].getcount());
