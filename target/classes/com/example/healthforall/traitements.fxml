@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.TraitementController">
    <children>
-      <Label alignment="CENTER" layoutY="-6.0" prefHeight="90.0" prefWidth="811.0" style="-fx-background-color: #243557;" text="TRAITEMENTS MEDICAUX" textAlignment="JUSTIFY" underline="true">
+      <Label alignment="CENTER" layoutX="184.0" layoutY="24.0" prefHeight="60.0" prefWidth="464.0" text="TRAITEMENTS MEDICAUX" textAlignment="JUSTIFY" underline="true">
          <font>
             <Font name="Consolas Italic" size="26.0" />
          </font>
@@ -16,12 +16,12 @@
                <stops>
                   <Stop>
                      <color>
-                        <Color red="0.3568490147590637" green="0.3387548625469208" blue="0.8815789222717285" />
+                        <Color red="0.050316765904426575" green="0.09210526198148727" blue="0.04093567281961441" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="0.9868420958518982" green="0.9868420958518982" blue="0.9868420958518982" />
+                        <Color red="0.05147417262196541" green="0.8552631735801697" blue="0.3595932722091675" />
                      </color>
                   </Stop>
                </stops>

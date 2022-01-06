@@ -26,10 +26,10 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="609.0">
                            <children>
-                              <AnchorPane layoutX="57.0" layoutY="79.0" prefHeight="309.0" prefWidth="512.0" style="-fx-border-color: #243557;">
+                              <AnchorPane layoutX="57.0" layoutY="79.0" prefHeight="309.0" prefWidth="512.0" style="-fx-border-color: #437C17;">
                                  <children>
-                                    <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #243557; -fx-font: #254117;" />
-                                    <TextField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #243557;" />
+                                    <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #254117; -fx-font: #254117;" />
+                                    <TextField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #254117;" />
                                     <Button fx:id="signIn" layoutX="170.0" layoutY="248.0" mnemonicParsing="false" onAction="#signIn" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #243557;" text="SIGN IN" textFill="WHITE" textOverrun="CLIP">
                                        <rotationAxis>
                                           <Point3D />
@@ -52,10 +52,10 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <AnchorPane layoutX="49.0" layoutY="32.0" prefHeight="446.0" prefWidth="512.0" style="-fx-border-color: #243557;">
+                              <AnchorPane layoutX="49.0" layoutY="32.0" prefHeight="446.0" prefWidth="512.0" style="-fx-border-color: #437C17;">
                                  <children>
-                                    <TextField fx:id="signupUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #243557; -fx-font: #243557;" />
-                                    <TextField fx:id="signupLastname" layoutX="168.0" layoutY="189.0" promptText="LastName" style="-fx-border-color: #243557;" />
+                                    <TextField fx:id="signupUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #254117; -fx-font: #254117;" />
+                                    <TextField fx:id="signupLastname" layoutX="168.0" layoutY="189.0" promptText="LastName" style="-fx-border-color: #254117;" />
                                     <Button layoutX="168.0" layoutY="377.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #243557;" text="SIGN UP" textFill="WHITE" />
                                     <Line endX="275.0" endY="-7.0" layoutX="237.0" layoutY="50.0" startX="-237.0" startY="-7.0" />
                                     <Label layoutX="25.0" layoutY="14.0" prefHeight="16.0" prefWidth="150.0" text="CREATE AN ACCOUNT " textFill="#243557" />
@@ -63,8 +63,8 @@
                                     <FontAwesomeIconView glyphName="USER" layoutX="393.0" layoutY="26.0" selectionFill="#25865f" size="15" />
                                     <Label layoutX="93.0" layoutY="133.0" text="Username:" />
                                     <Label layoutX="92.0" layoutY="194.0" text="LastName" />
-                                    <TextField fx:id="signupEmail" layoutX="168.0" layoutY="243.0" promptText="example@gmail.com" style="-fx-border-color: #243557;" />
-                                    <TextField fx:id="signupPassword" cache="true" layoutX="168.0" layoutY="301.0" promptText="Password" style="-fx-border-color: #243557;" />
+                                    <TextField fx:id="signupEmail" layoutX="168.0" layoutY="243.0" promptText="example@gmail.com" style="-fx-border-color: #254117;" />
+                                    <TextField fx:id="signupPassword" cache="true" layoutX="168.0" layoutY="301.0" promptText="Password" style="-fx-border-color: #254117;" />
                                     <Label layoutX="115.0" layoutY="248.0" prefHeight="16.0" prefWidth="49.0" text="e-mail:" />
                                     <Label layoutX="92.0" layoutY="306.0" text="Passsword:" />
                                     <Label fx:id="registerMessage" alignment="CENTER" layoutX="15.0" layoutY="79.0" prefHeight="17.0" prefWidth="484.0" />
