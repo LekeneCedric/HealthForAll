@@ -73,7 +73,7 @@
             <ToggleGroup fx:id="symptomeFrequent1" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="367.0" layoutY="182.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent1">
+      <RadioButton fx:id="symptomeFrequent1Non" layoutX="367.0" layoutY="182.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent1">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -84,7 +84,7 @@
          </font>
       </Label>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="226.0" selectionFill="#0d50d7" />
-      <RadioButton layoutX="371.0" layoutY="213.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeFrequent2Oui" layoutX="371.0" layoutY="213.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -92,7 +92,7 @@
             <ToggleGroup fx:id="symptomeFrequent2" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="442.0" layoutY="213.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent2">
+      <RadioButton fx:id="symptomeFrequent2Non" layoutX="442.0" layoutY="213.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent2">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -103,7 +103,7 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="315.0" layoutY="244.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeFrequent3Oui" layoutX="315.0" layoutY="244.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -111,7 +111,7 @@
             <ToggleGroup fx:id="symptomeFrequent3" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="379.0" layoutY="244.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent3">
+      <RadioButton fx:id="symptomeFrequent3Non" layoutX="379.0" layoutY="244.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent3">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -122,7 +122,7 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="389.0" layoutY="272.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeFrequent4Oui" layoutX="389.0" layoutY="272.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -130,18 +130,18 @@
             <ToggleGroup fx:id="symptomeFrequent4" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="454.0" layoutY="272.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent4">
+      <RadioButton fx:id="symptomeFrequent4Non" layoutX="454.0" layoutY="272.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent4">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="313.0" selectionFill="#0d50d7" />
-      <Label layoutX="39.0" layoutY="298.0" prefHeight="21.0" prefWidth="340.0" text="Vous avez mal a la gorge ? " textFill="#243557">
+      <Label layoutX="39.0" layoutY="298.0" prefHeight="21.0" prefWidth="215.0" text="Vous avez mal a la gorge ? " textFill="#243557">
          <font>
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="267.0" layoutY="300.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeMoinsFrequent1Oui" layoutX="267.0" layoutY="300.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -149,7 +149,7 @@
             <ToggleGroup fx:id="symptomeMoinsFrequent1" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="342.0" layoutY="300.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton fx:id="symptomeMoinsFrequent1Non" layoutX="342.0" layoutY="300.0" mnemonicParsing="false" text="Non" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -163,7 +163,7 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="314.0" layoutY="328.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeMoinsFrequent2Oui" layoutX="314.0" layoutY="328.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -171,7 +171,7 @@
             <ToggleGroup fx:id="symptomeMoinsFrequent3" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="382.0" layoutY="328.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent3">
+      <RadioButton fx:id="symptomeMoinsFrequent2Non" layoutX="382.0" layoutY="328.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent3">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -182,7 +182,7 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="287.0" layoutY="362.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeMoinsFrequent3Oui" layoutX="287.0" layoutY="362.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -190,7 +190,7 @@
             <ToggleGroup fx:id="symptomeMoinsFrequent4" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="360.0" layoutY="362.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent4">
+      <RadioButton fx:id="symptomeMoinsFrequent3Non" layoutX="360.0" layoutY="362.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent4">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -201,7 +201,7 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="419.0" layoutY="392.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeMoinsFrequent4Oui" layoutX="419.0" layoutY="392.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -209,7 +209,7 @@
             <ToggleGroup fx:id="symptomeMoinsFrequent5" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="484.0" layoutY="392.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent5">
+      <RadioButton fx:id="symptomeMoinsFrequent4Non" layoutX="484.0" layoutY="392.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent5">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -220,7 +220,7 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="639.0" layoutY="422.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeMoinsFrequent5Oui" layoutX="639.0" layoutY="422.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -228,7 +228,7 @@
             <ToggleGroup fx:id="symptomeMoinsFrequent6" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="705.0" layoutY="422.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent6">
+      <RadioButton fx:id="symptomeMoinsFrequent5Non" layoutX="705.0" layoutY="422.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent6">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -239,7 +239,7 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="472.0" layoutY="444.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeGrave1Oui" layoutX="472.0" layoutY="444.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -247,7 +247,7 @@
             <ToggleGroup fx:id="symptomeGrave1" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="538.0" layoutY="445.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave1">
+      <RadioButton fx:id="symptomeGrave1Non" layoutX="538.0" layoutY="445.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave1">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -258,7 +258,7 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="665.0" layoutY="468.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeGrave2Oui" layoutX="665.0" layoutY="468.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -266,7 +266,7 @@
             <ToggleGroup fx:id="symptomeGrave2" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="728.0" layoutY="468.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave2">
+      <RadioButton fx:id="symptomeGrave2Non" layoutX="728.0" layoutY="468.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave2">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -277,7 +277,7 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="438.0" layoutY="489.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeGrave3Oui" layoutX="438.0" layoutY="489.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -285,7 +285,7 @@
             <ToggleGroup fx:id="symptomeGrave3" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="524.0" layoutY="489.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave3">
+      <RadioButton fx:id="symptomeGrave3Non" layoutX="524.0" layoutY="489.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave3">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
