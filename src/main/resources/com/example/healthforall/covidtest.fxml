@@ -5,21 +5,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.CovidTestController">
+<AnchorPane prefHeight="741.0" prefWidth="811.0" style="-fx-background-color: #DCDCCA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.CovidTestController">
    <children>
-      <ImageView fitHeight="680.0" fitWidth="814.0" layoutX="4.0" layoutY="63.0" opacity="0.5" pickOnBounds="true">
-         <image>
-            <Image url="@../../../images/test-rapides_illus_web.jpg" />
-         </image>
-      </ImageView>
       <Label alignment="CENTER" prefHeight="61.0" prefWidth="821.0" style="-fx-background-color: #243557;" text="TEST COVID-19" textAlignment="JUSTIFY">
          <font>
             <Font name="Consolas Italic" size="26.0" />
@@ -41,7 +34,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="14.0" layoutY="76.0" prefHeight="17.0" prefWidth="96.0" text="Consigne :" textFill="#243557" underline="true">
+      <Label layoutX="21.0" layoutY="105.0" prefHeight="17.0" prefWidth="96.0" text="Consigne:" textFill="#243557" underline="true">
          <font>
             <Font name="Consolas Bold Italic" size="17.0" />
          </font>
@@ -56,12 +49,12 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="110.0" layoutY="76.0" prefHeight="21.0" prefWidth="132.0" text="B I EN V E N U E ">
+      <Label layoutX="238.0" layoutY="76.0" prefHeight="21.0" prefWidth="132.0" text="B I EN V E N U E ">
          <font>
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="nompatientcovid" layoutX="257.0" layoutY="76.0" prefHeight="21.0" prefWidth="132.0" textFill="#4015c3">
+      <Label fx:id="nompatientcovid" layoutX="379.0" layoutY="76.0" prefHeight="21.0" prefWidth="132.0" textFill="#4015c3">
          <font>
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
@@ -72,7 +65,7 @@
          </font>
       </Label>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="193.0" selectionFill="#0d50d7" />
-      <RadioButton layoutX="276.0" layoutY="182.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton fx:id="symptomeFrequent1Oui" layoutX="276.0" layoutY="182.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -99,13 +92,10 @@
             <ToggleGroup fx:id="symptomeFrequent2" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="442.0" layoutY="213.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="442.0" layoutY="213.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent2">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequen2" />
-         </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="257.0" selectionFill="#0d50d7" />
       <Label layoutX="39.0" layoutY="242.0" prefHeight="21.0" prefWidth="332.0" text="Sentez vous une grande fatigue ? " textFill="#243557">
@@ -181,13 +171,10 @@
             <ToggleGroup fx:id="symptomeMoinsFrequent3" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="382.0" layoutY="328.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="382.0" layoutY="328.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent3">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeMoinsFrequent4" />
-         </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="375.0" selectionFill="#0d50d7" />
       <Label layoutX="39.0" layoutY="360.0" prefHeight="21.0" prefWidth="282.0" text="Avez vous des courbatures ? " textFill="#243557">
@@ -200,10 +187,10 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeMoinsFrequent5" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent4" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="360.0" layoutY="362.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent5">
+      <RadioButton layoutX="360.0" layoutY="362.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent4">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -219,10 +206,10 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeMoinsFrequent6" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent5" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="472.0" layoutY="393.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent6">
+      <RadioButton layoutX="484.0" layoutY="392.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent5">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -238,10 +225,10 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeMoinsFrequent7" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent6" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="697.0" layoutY="422.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent7">
+      <RadioButton layoutX="705.0" layoutY="422.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent6">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -279,7 +266,7 @@
             <ToggleGroup fx:id="symptomeGrave2" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="719.0" layoutY="468.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave2">
+      <RadioButton layoutX="728.0" layoutY="468.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave2">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -298,17 +285,17 @@
             <ToggleGroup fx:id="symptomeGrave3" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="493.0" layoutY="489.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave3">
+      <RadioButton layoutX="524.0" layoutY="489.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave3">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </RadioButton>
-      <Button layoutX="268.0" layoutY="566.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="272.0" style="-fx-background-color: #243557;" text="V A L I D E R     L E      F O R M U L A I R E " textFill="WHITE">
+      <Button layoutX="221.0" layoutY="632.0" mnemonicParsing="false" onAction="#resetTestCovid" prefHeight="40.0" prefWidth="332.0" style="-fx-background-color: #243557;" text="A N N U L E R       L E      F O R M U L A I R E " textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="268.0" layoutY="634.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="272.0" style="-fx-background-color: #243557;" text="A N N U L E R       L E      F O R M U L A I R E " textFill="WHITE">
+      <Button layoutX="221.0" layoutY="571.0" mnemonicParsing="false" onAction="#testCovid" prefHeight="40.0" prefWidth="332.0" style="-fx-background-color: #243557;" text="V A L I D E R     L E      F O R M U L A I R E " textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>

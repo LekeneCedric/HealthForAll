@@ -1,5 +1,6 @@
 package com.example.healthforall;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ToggleGroup;
@@ -8,8 +9,6 @@ public class CovidTestController {
     @FXML
     private Label nompatientcovid;
 
-    @FXML
-    private ToggleGroup symptomeFrequen2;
 
     @FXML
     private ToggleGroup symptomeFrequent1;
@@ -52,4 +51,13 @@ public class CovidTestController {
 
     @FXML
     private ToggleGroup symptomeMoinsFrequent7;
+    @FXML
+    void resetTestCovid(ActionEvent event) {
+            if ()
+    }
+
+    @FXML
+    void testCovid(ActionEvent event) {
+
+    }
 }
