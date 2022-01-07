@@ -1,5 +1,5 @@
 package com.example.healthforall;
-
+import java.lang.module.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -9,16 +9,13 @@ import java.io.IOException;
 
 public class HelloApplication extends Application {
     @Override
-    public void start(Stage stage)  {
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("signup-signin-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("HealthForAll");
 
-      try{
-          FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("signup-signin-view.fxml"));
-          Scene scene = new Scene(fxmlLoader.load());
-          stage.setTitle("HealthForAll");
-          stage.getIcons();
-          stage.setScene(scene);
-          stage.show();
-      }catch (Exception e){}
+        stage.setScene(scene);
+        stage.show();
     }
 
     public static void main(String[] args) {

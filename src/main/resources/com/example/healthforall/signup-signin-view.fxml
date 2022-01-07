@@ -17,7 +17,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.PasswordField?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #243557;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.HelloController">
    <children>
       <VBox layoutX="588.0" prefHeight="800.0" prefWidth="609.0" style="-fx-background-color: F4F4F4;">
@@ -38,24 +37,12 @@
                            <children>
                               <AnchorPane layoutX="57.0" layoutY="79.0" prefHeight="309.0" prefWidth="512.0" style="-fx-border-color: #243557; -fx-background-color: F4F4F4;">
                                  <children>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
                                     <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #fff; -fx-font: #254117; -fx-background-color: #fff;">
                                        <opaqueInsets>
                                           <Insets left="25.0" right="25.0" />
                                        </opaqueInsets></TextField>
                                     <PasswordField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #fff; -fx-background-color: #ffff;" />
                                     <Button fx:id="signIn" layoutX="170.0" layoutY="248.0" mnemonicParsing="false" onAction="#signIn" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #243557;" text="SIGN IN" textFill="WHITE" textOverrun="CLIP">
-=======
-                                    <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #243557; -fx-font: #254117;" />
-                                    <PasswordField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #243557;" />
-                                    <Button fx:id="signIn" layoutX="170.0" layoutY="248.0" mnemonicParsing="false" onAction="#connexion" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #243557;" text="SIGN IN" textFill="WHITE" textOverrun="CLIP">
->>>>>>> Stashed changes
-=======
-                                    <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #243557; -fx-font: #254117;" />
-                                    <PasswordField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #243557;" />
-                                    <Button fx:id="signIn" layoutX="170.0" layoutY="248.0" mnemonicParsing="false" onAction="#connexion" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #243557;" text="SIGN IN" textFill="WHITE" textOverrun="CLIP">
->>>>>>> Stashed changes
                                        <rotationAxis>
                                           <Point3D />
                                        </rotationAxis>
@@ -108,7 +95,7 @@
             <Font name="Bitstream Vera Sans Mono Bold" size="64.0" />
          </font>
       </Label>
-      <Label layoutX="229.0" layoutY="41.0" text="HealthForAll" textFill="#e1d8d8">
+      <Label layoutX="229.0" layoutY="41.0" text="ealthForAll" textFill="#e1d8d8">
          <font>
             <Font name="Mongolian Baiti" size="36.0" />
          </font>

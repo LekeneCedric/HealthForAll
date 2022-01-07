@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.HelloController">
    <children>
-      <BorderPane fx:id="borderPane" layoutY="-3.0" prefHeight="741.0" prefWidth="1107.0" style="-fx-background-color: #fff;">
+      <BorderPane fx:id="borderPane" layoutY="-3.0" prefHeight="741.0" prefWidth="1107.0">
          <left>
             <VBox prefHeight="741.0" prefWidth="282.0" style="-fx-background-color: #243557;" BorderPane.alignment="CENTER">
                <children>
@@ -19,7 +17,7 @@
                         <Insets top="150.0" />
                      </VBox.margin>
                      <graphic>
-                        <FontAwesomeIconView glyphName="HEART" selectionFill="#dd0000" size="18" wrappingWidth="24.0" />
+                        <FontAwesomeIconView glyphName="HEART" selectionFill="RED" size="18" wrappingWidth="24.0" />
                      </graphic>
                      <font>
                         <Font name="System Bold Italic" size="20.0" />

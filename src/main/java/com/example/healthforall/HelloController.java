@@ -7,14 +7,6 @@ import com.mongodb.client.MongoDatabase;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-import javafx.scene.Parent;
->>>>>>> Stashed changes
-=======
-import javafx.scene.Parent;
->>>>>>> Stashed changes
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 
@@ -113,8 +105,6 @@ public class HelloController{
     private Button switchsignup;
     @FXML
     private Label registerMessage;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     @FXML
     protected void signIn()
     {
@@ -140,12 +130,6 @@ public class HelloController{
             info.setText(" Utilisateur non existant ");
         }
     }
-=======
-
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
     @FXML
     protected void signUp()
     {
@@ -171,29 +155,6 @@ public class HelloController{
 
     }
 
-    public void connexion(ActionEvent actionEvent) {
-         ;
-        String username = signinUsername.getText();
-        String password = signinPassword.getText();
-        Document found = (Document)auth.find(new Document("username",username)).first();
-        if (found != null) {
-            Stage stage = new Stage();
-            try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("home-view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            stage.setTitle("Main Menu");
-            stage.getIcons();
-            stage.setScene(scene);
-            stage.show();}
-            catch(Exception e)
-            {
 
-            }
-        }
-        else
-        {
-
-        }
-    }
 
 }
