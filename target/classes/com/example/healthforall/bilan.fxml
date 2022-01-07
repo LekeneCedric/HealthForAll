@@ -7,11 +7,17 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< Updated upstream
 <AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.BilanController">
    <children>
       <Label alignment="CENTER" prefHeight="50.0" prefWidth="821.0" style="-fx-background-color: #243557;" text="BILAN DE SANTE" textAlignment="JUSTIFY">
+=======
+<AnchorPane prefHeight="750.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.BilanController">
+   <children>
+      <Label alignment="CENTER" prefHeight="51.0" prefWidth="874.0" style="-fx-background-color: #243557;" text="BILAN COMPLET DE SANTE" textAlignment="JUSTIFY">
+>>>>>>> Stashed changes
          <font>
-            <Font name="Consolas Italic" size="26.0" />
+            <Font name="Consolas Bold Italic" size="26.0" />
          </font>
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
@@ -30,5 +36,28 @@
             </LinearGradient>
          </textFill>
       </Label>
+<<<<<<< Updated upstream
+=======
+      <Label layoutX="26.0" layoutY="66.0" prefHeight="17.0" prefWidth="77.0" text="Consigne:" textFill="#243557" underline="true">
+         <font>
+            <Font name="Consolas Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="83.0" prefHeight="17.0" prefWidth="482.0" text="(plus vos reponses sont precises plus votre resultat sera sur)" textFill="#978585">
+         <font>
+            <Font name="Consolas Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="66.0" prefHeight="17.0" prefWidth="373.0" text="Repondez attentivement aux questions suivantes : " textFill="#243557">
+         <font>
+            <Font name="Consolas Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutY="100.0" prefHeight="651.0" prefWidth="874.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="858.0" />
+        </content>
+      </ScrollPane>
+>>>>>>> Stashed changes
    </children>
 </AnchorPane>

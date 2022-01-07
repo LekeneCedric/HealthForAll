@@ -1,39 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< Updated upstream
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
+=======
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+>>>>>>> Stashed changes
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< Updated upstream
 <AnchorPane prefHeight="741.0" prefWidth="811.0" style="-fx-background-color: #DCDCCA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.CovidTestController">
    <children>
       <Label alignment="CENTER" prefHeight="61.0" prefWidth="821.0" style="-fx-background-color: #243557;" text="TEST COVID-19" textAlignment="JUSTIFY">
          <font>
             <Font name="Consolas Italic" size="26.0" />
+=======
+<AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.CovidTestController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="1.0" prefHeight="51.0" prefWidth="811.0" style="-fx-background-color: #243557;" text="TEST COVID-19 " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+>>>>>>> Stashed changes
          </font>
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
                   <Stop>
                      <color>
+<<<<<<< Updated upstream
                         <Color red="0.3568490147590637" green="0.3387548625469208" blue="0.8815789222717285" />
+=======
+                        <Color red="0.2927631437778473" green="0.5712719559669495" blue="0.7105262875556946" />
+>>>>>>> Stashed changes
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
+<<<<<<< Updated upstream
                         <Color red="0.9868420958518982" green="0.9868420958518982" blue="0.9868420958518982" />
+=======
+                        <Color red="1.0" green="1.0" blue="1.0" />
+>>>>>>> Stashed changes
                      </color>
                   </Stop>
                </stops>
             </LinearGradient>
          </textFill>
       </Label>
+<<<<<<< Updated upstream
       <Label layoutX="21.0" layoutY="105.0" prefHeight="17.0" prefWidth="96.0" text="Consigne:" textFill="#243557" underline="true">
          <font>
             <Font name="Consolas Bold Italic" size="17.0" />
@@ -300,5 +324,111 @@
             <Font name="System Bold Italic" size="15.0" />
          </font>
       </Button>
+=======
+      <Label layoutX="98.0" layoutY="88.0" prefHeight="17.0" prefWidth="77.0" text="Consigne:" textFill="#243557" underline="true">
+         <font>
+            <Font name="Consolas Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="105.0" prefHeight="17.0" prefWidth="482.0" text="(plus vos reponses sont precises plus votre resultat sera sur)" textFill="#978585">
+         <font>
+            <Font name="Consolas Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="88.0" prefHeight="17.0" prefWidth="373.0" text="Repondez attentivement aux questions suivantes : " textFill="#243557">
+         <font>
+            <Font name="Consolas Italic" size="14.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutY="132.0" prefHeight="609.0" prefWidth="811.0">
+        <content>
+          <AnchorPane cache="true" cacheShape="false" depthTest="DISABLE" minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="795.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="50.0" prefHeight="17.0" prefWidth="492.0" text="Avez vous des apparition ou aggravation de toux ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="52.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="52.0" mnemonicParsing="false" text="Non" textFill="#d00d0d" />
+                  <Label layoutX="14.0" layoutY="78.0" prefHeight="17.0" prefWidth="492.0" text="Ressentez vous des essoufflement ou difficulté respiratoire ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="80.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="173.0" mnemonicParsing="false" text="Non" textFill="#da0d0d" />
+                  <Label layoutX="14.0" layoutY="107.0" prefHeight="17.0" prefWidth="492.0" text="Votre température est elle égale ou supérieure à 38 °C ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="173.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="80.0" mnemonicParsing="false" text="Non" textFill="#da0d0d" />
+                  <Label layoutX="14.0" layoutY="140.0" prefHeight="17.0" prefWidth="492.0" text="Avez vous des sensations de fievres  ?" textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="110.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="109.0" mnemonicParsing="false" text="Non" textFill="#d01212" />
+                  <Label layoutX="14.0" layoutY="171.0" prefHeight="17.0" prefWidth="492.0" text="Ressentez vous des frissons ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="142.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="142.0" mnemonicParsing="false" text="Non" textFill="#d70a0a" />
+                  <Label layoutX="14.0" layoutY="211.0" prefHeight="17.0" prefWidth="492.0" text="Ressentez vous des sensations de fatique ou de faiblesse ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="213.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="213.0" mnemonicParsing="false" text="Non" textFill="#e81212" />
+                  <Label layoutX="14.0" layoutY="250.0" prefHeight="17.0" prefWidth="492.0" text="Avez vous des douleurs musculaires ou articulaires ou des courbatures  ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="252.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="252.0" mnemonicParsing="false" text="Non" textFill="#d01515" />
+                  <Label layoutX="14.0" layoutY="287.0" prefHeight="17.0" prefWidth="492.0" text="Avez vous des pertes d'odorat ou de gout ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="289.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="289.0" mnemonicParsing="false" text="Non" textFill="#bf1515" />
+                  <Label layoutX="14.0" layoutY="332.0" prefHeight="17.0" prefWidth="492.0" text="Vous avez des maux de tetes ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="334.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="334.0" mnemonicParsing="false" text="Non" textFill="#cd1111" />
+                  <Label layoutX="14.0" layoutY="377.0" prefHeight="17.0" prefWidth="492.0" text="douleurs abdominales, diarrhée et vomissements ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="379.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="379.0" mnemonicParsing="false" text="Non" textFill="#d01414" />
+                  <Label layoutX="14.0" layoutY="416.0" prefHeight="17.0" prefWidth="492.0" text="Ressentez vous des malaises instables ? " textFill="#243557">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="517.0" layoutY="418.0" mnemonicParsing="false" text="oui" textFill="#243557" />
+                  <RadioButton layoutX="629.0" layoutY="418.0" mnemonicParsing="false" text="Non" textFill="#cd1414" />
+                  <Button layoutX="278.0" layoutY="503.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #243557;" text="VALIDER LE FORMULAIRE" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+>>>>>>> Stashed changes
    </children>
 </AnchorPane>
