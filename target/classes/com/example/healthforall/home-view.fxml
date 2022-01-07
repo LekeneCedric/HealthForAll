@@ -12,7 +12,7 @@
          <left>
             <VBox prefHeight="741.0" prefWidth="282.0" style="-fx-background-color: #243557;" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="bilanSante" mnemonicParsing="false" onAction="#bilan" prefHeight="55.0" prefWidth="287.0" style="-fx-background-color: #fff;" text="Bilan de Sante" textFill="#222020">
+                  <Button fx:id="bilanSante" mnemonicParsing="false" onAction="#bilan" prefHeight="55.0" prefWidth="287.0" style="-fx-background-color: #fff;" text="Bilan de Sante" textFill="#243557">
                      <VBox.margin>
                         <Insets top="150.0" />
                      </VBox.margin>
@@ -20,10 +20,10 @@
                         <FontAwesomeIconView glyphName="HEART" selectionFill="RED" size="18" wrappingWidth="24.0" />
                      </graphic>
                      <font>
-                        <Font size="20.0" />
+                        <Font name="System Bold Italic" size="20.0" />
                      </font>
                   </Button>
-                  <Button fx:id="testCovid" mnemonicParsing="false" onAction="#covid" prefHeight="47.0" prefWidth="294.0" style="-fx-background-color: #fff;" text="Test Covid">
+                  <Button fx:id="testCovid" mnemonicParsing="false" onAction="#covid" prefHeight="47.0" prefWidth="294.0" style="-fx-background-color: #fff;" text="Test Covid" textFill="#243557">
                      <VBox.margin>
                         <Insets top="40.0" />
                      </VBox.margin>
@@ -31,10 +31,10 @@
                         <FontAwesomeIconView glyphName="USER" selectionFill="#c3a3a3" size="18" wrappingWidth="38.0" />
                      </graphic>
                      <font>
-                        <Font size="20.0" />
+                        <Font name="System Bold Italic" size="20.0" />
                      </font>
                   </Button>
-                  <Button fx:id="traitements" mnemonicParsing="false" onAction="#traitements" prefHeight="51.0" prefWidth="287.0" style="-fx-background-color: #fff;" text="Traitements  ">
+                  <Button fx:id="traitements" mnemonicParsing="false" onAction="#traitements" prefHeight="51.0" prefWidth="287.0" style="-fx-background-color: #fff;" text="Traitements  " textFill="#243557">
                      <VBox.margin>
                         <Insets top="40.0" />
                      </VBox.margin>
@@ -42,7 +42,7 @@
                         <FontAwesomeIconView glyphName="LIST" selectionFill="#03391e" size="18" wrappingWidth="29.0" />
                      </graphic>
                      <font>
-                        <Font size="20.0" />
+                        <Font name="System Bold Italic" size="20.0" />
                      </font>
                   </Button>
                   <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="41.0" prefWidth="287.0" style="-fx-background-color: #C0392B;" text="Exit" textFill="WHITE">
@@ -53,7 +53,7 @@
                         <FontAwesomeIconView glyphName="SHARE" size="18" wrappingWidth="27.0" />
                      </graphic>
                      <font>
-                        <Font size="20.0" />
+                        <Font name="System Bold Italic" size="20.0" />
                      </font>
                   </Button>
                </children>

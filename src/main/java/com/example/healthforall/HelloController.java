@@ -1,26 +1,27 @@
 package com.example.healthforall;
 
-
-import com.mongodb.MongoClientURI;
 import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
-import com.mongodb.MongoClient;
+
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import org.bson.Document;
 
 
-public class HelloController<MongoClientURI> {
+public class HelloController{
     String uri = "mongodb://127.0.0.1:27017/?compressors=zlib&gssapiServiceName=mongodb";
     MongoClientURI clientURI = new MongoClientURI(uri);
     MongoClient mongoClient = new MongoClient(clientURI);
 
-    MongoDatabase mongoDatabase = mongoClient.getDatabaseNames("HealthForAll");
+    MongoDatabase mongoDatabase = mongoClient.getDatabase("HealthForAll");
     MongoCollection auth = mongoDatabase.getCollection("authentification");
     @FXML
     protected BorderPane borderPane;
@@ -109,9 +110,20 @@ public class HelloController<MongoClientURI> {
     {
         String username = signinUsername.getText();
         String password = signinPassword.getText();
-        Document found = (Document)auth.find(new Document("username",username)).first();
+        Document found = (Document)auth.find(new Document("password",password)).first();
         if (found != null) {
-            info.setText(" Utilisateur existant ! ");
+            try {
+                Stage stage = new Stage();
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("home-view.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+                stage.setScene(scene);
+                stage.show();
+            }
+            catch (Exception e)
+            {
+
+            }
+
         }
         else
         {
@@ -134,7 +146,7 @@ public class HelloController<MongoClientURI> {
 
             auth.insertOne(document);
             registerMessage.setText("Utilisateur creer avec success");
-        }
+           }
         catch (Exception e)
         {
             registerMessage.setText(e.getMessage());

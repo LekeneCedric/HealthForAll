@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.TraitementController">
    <children>
-      <Label alignment="CENTER" layoutY="-6.0" prefHeight="90.0" prefWidth="811.0" style="-fx-background-color: #243557;" text="TRAITEMENTS MEDICAUX" textAlignment="JUSTIFY" underline="true">
+      <Label alignment="CENTER" layoutY="-6.0" prefHeight="53.0" prefWidth="811.0" style="-fx-background-color: #243557;" text="TRAITEMENTS MEDICAUX" textAlignment="JUSTIFY" underline="true">
          <font>
             <Font name="Consolas Italic" size="26.0" />
          </font>
