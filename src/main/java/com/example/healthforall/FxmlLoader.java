@@ -3,7 +3,7 @@ package com.example.healthforall;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 
-import java.net.URI;
+
 import java.net.URL;
 
 public class FxmlLoader {
