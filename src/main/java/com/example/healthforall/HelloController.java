@@ -3,7 +3,6 @@ package com.example.healthforall;
 
 import com.mongodb.MongoClientURI;
 import com.mongodb.MongoClient;
-import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import javafx.event.ActionEvent;
