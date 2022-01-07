@@ -39,12 +39,18 @@
                               <AnchorPane layoutX="57.0" layoutY="79.0" prefHeight="309.0" prefWidth="512.0" style="-fx-border-color: #243557; -fx-background-color: F4F4F4;">
                                  <children>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                     <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #fff; -fx-font: #254117; -fx-background-color: #fff;">
                                        <opaqueInsets>
                                           <Insets left="25.0" right="25.0" />
                                        </opaqueInsets></TextField>
                                     <PasswordField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #fff; -fx-background-color: #ffff;" />
                                     <Button fx:id="signIn" layoutX="170.0" layoutY="248.0" mnemonicParsing="false" onAction="#signIn" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #243557;" text="SIGN IN" textFill="WHITE" textOverrun="CLIP">
+=======
+                                    <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #243557; -fx-font: #254117;" />
+                                    <PasswordField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #243557;" />
+                                    <Button fx:id="signIn" layoutX="170.0" layoutY="248.0" mnemonicParsing="false" onAction="#connexion" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #243557;" text="SIGN IN" textFill="WHITE" textOverrun="CLIP">
+>>>>>>> Stashed changes
 =======
                                     <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #243557; -fx-font: #254117;" />
                                     <PasswordField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #243557;" />

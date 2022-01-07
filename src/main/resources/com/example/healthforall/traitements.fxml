@@ -10,7 +10,11 @@
 <AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.TraitementController">
    <children>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <Label alignment="CENTER" layoutY="-6.0" prefHeight="53.0" prefWidth="811.0" style="-fx-background-color: #243557;" text="TRAITEMENTS MEDICAUX" textAlignment="JUSTIFY" underline="true">
+=======
+      <Label alignment="CENTER" layoutY="-6.0" prefHeight="58.0" prefWidth="811.0" style="-fx-background-color: #243557;" text="TRAITEMENTS MEDICAUX" textAlignment="JUSTIFY" underline="true">
+>>>>>>> Stashed changes
 =======
       <Label alignment="CENTER" layoutY="-6.0" prefHeight="58.0" prefWidth="811.0" style="-fx-background-color: #243557;" text="TRAITEMENTS MEDICAUX" textAlignment="JUSTIFY" underline="true">
 >>>>>>> Stashed changes

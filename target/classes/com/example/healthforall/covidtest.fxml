@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
 =======
+=======
+>>>>>>> Stashed changes
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
@@ -19,17 +25,23 @@
 <?import javafx.scene.text.Font?>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <AnchorPane prefHeight="741.0" prefWidth="811.0" style="-fx-background-color: #DCDCCA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.CovidTestController">
    <children>
       <Label alignment="CENTER" prefHeight="61.0" prefWidth="821.0" style="-fx-background-color: #243557;" text="TEST COVID-19" textAlignment="JUSTIFY">
          <font>
             <Font name="Consolas Italic" size="26.0" />
 =======
+=======
+>>>>>>> Stashed changes
 <AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.CovidTestController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="1.0" prefHeight="51.0" prefWidth="811.0" style="-fx-background-color: #243557;" text="TEST COVID-19 " textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="29.0" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
          </font>
          <textFill>
@@ -38,7 +50,11 @@
                   <Stop>
                      <color>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         <Color red="0.3568490147590637" green="0.3387548625469208" blue="0.8815789222717285" />
+=======
+                        <Color red="0.2927631437778473" green="0.5712719559669495" blue="0.7105262875556946" />
+>>>>>>> Stashed changes
 =======
                         <Color red="0.2927631437778473" green="0.5712719559669495" blue="0.7105262875556946" />
 >>>>>>> Stashed changes
@@ -47,7 +63,11 @@
                   <Stop offset="1.0">
                      <color>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         <Color red="0.9868420958518982" green="0.9868420958518982" blue="0.9868420958518982" />
+=======
+                        <Color red="1.0" green="1.0" blue="1.0" />
+>>>>>>> Stashed changes
 =======
                         <Color red="1.0" green="1.0" blue="1.0" />
 >>>>>>> Stashed changes
@@ -57,6 +77,7 @@
             </LinearGradient>
          </textFill>
       </Label>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       <Label layoutX="21.0" layoutY="105.0" prefHeight="17.0" prefWidth="96.0" text="Consigne:" textFill="#243557" underline="true">
          <font>
@@ -325,6 +346,8 @@
          </font>
       </Button>
 =======
+=======
+>>>>>>> Stashed changes
       <Label layoutX="98.0" layoutY="88.0" prefHeight="17.0" prefWidth="77.0" text="Consigne:" textFill="#243557" underline="true">
          <font>
             <Font name="Consolas Italic" size="14.0" />
@@ -429,6 +452,9 @@
             </AnchorPane>
         </content>
       </ScrollPane>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
    </children>
 </AnchorPane>

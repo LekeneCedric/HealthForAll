@@ -37,6 +37,7 @@
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="609.0" style="-fx-background-color: F4F4F4;">
                            <children>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                               <AnchorPane layoutX="57.0" layoutY="79.0" prefHeight="309.0" prefWidth="512.0" style="-fx-border-color: #243557; -fx-background-color: F4F4F4;">
                                  <children>
                                     <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #fff; -fx-font: #254117; -fx-background-color: #fff;">
@@ -45,6 +46,13 @@
                                        </opaqueInsets></TextField>
                                     <PasswordField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #fff; -fx-background-color: #ffff;" />
                                     <Button fx:id="signIn" layoutX="170.0" layoutY="248.0" mnemonicParsing="false" onAction="#signIn" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #243557;" text="SIGN IN" textFill="WHITE" textOverrun="CLIP">
+=======
+                              <AnchorPane layoutX="57.0" layoutY="79.0" prefHeight="309.0" prefWidth="512.0" style="-fx-border-color: #243557;">
+                                 <children>
+                                    <TextField fx:id="signinUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #243557; -fx-font: #254117;" />
+                                    <PasswordField fx:id="signinPassword" layoutX="168.0" layoutY="189.0" promptText="Password" style="-fx-border-color: #243557;" />
+                                    <Button fx:id="signIn" layoutX="170.0" layoutY="248.0" mnemonicParsing="false" onAction="#connexion" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #243557;" text="SIGN IN" textFill="WHITE" textOverrun="CLIP">
+>>>>>>> Stashed changes
 =======
                               <AnchorPane layoutX="57.0" layoutY="79.0" prefHeight="309.0" prefWidth="512.0" style="-fx-border-color: #243557;">
                                  <children>
@@ -74,15 +82,21 @@
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                               <AnchorPane layoutX="49.0" layoutY="32.0" prefHeight="446.0" prefWidth="512.0" style="-fx-border-color: #243557; -fx-background-color: F4F4F4;">
                                  <children>
                                     <TextField fx:id="signupUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #fff; -fx-font: #243557;" />
                                     <TextField fx:id="signupLastname" layoutX="168.0" layoutY="189.0" promptText="LastName" style="-fx-border-color: #fff;" />
 =======
+=======
+>>>>>>> Stashed changes
                               <AnchorPane layoutX="49.0" layoutY="32.0" prefHeight="446.0" prefWidth="512.0" style="-fx-border-color: #243557;">
                                  <children>
                                     <TextField fx:id="signupUsername" layoutX="168.0" layoutY="128.0" promptText="Username" style="-fx-border-color: #243557; -fx-font: #243557;" />
                                     <TextField fx:id="signupLastname" layoutX="168.0" layoutY="189.0" promptText="LastName" style="-fx-border-color: #243557;" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                                     <Button layoutX="168.0" layoutY="377.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #243557;" text="SIGN UP" textFill="WHITE" />
                                     <Line endX="275.0" endY="-7.0" layoutX="237.0" layoutY="50.0" startX="-237.0" startY="-7.0" />
@@ -92,8 +106,13 @@
                                     <Label layoutX="93.0" layoutY="133.0" text="Username:" />
                                     <Label layoutX="92.0" layoutY="194.0" text="LastName" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                     <TextField fx:id="signupEmail" layoutX="168.0" layoutY="243.0" promptText="example@gmail.com" style="-fx-border-color: #fff;" />
                                     <TextField fx:id="signupPassword" cache="true" layoutX="168.0" layoutY="301.0" promptText="Password" style="-fx-border-color: #fff;" />
+=======
+                                    <TextField fx:id="signupEmail" layoutX="168.0" layoutY="243.0" promptText="example@gmail.com" style="-fx-border-color: #243557;" />
+                                    <TextField fx:id="signupPassword" cache="true" layoutX="168.0" layoutY="301.0" promptText="Password" style="-fx-border-color: #243557;" />
+>>>>>>> Stashed changes
 =======
                                     <TextField fx:id="signupEmail" layoutX="168.0" layoutY="243.0" promptText="example@gmail.com" style="-fx-border-color: #243557;" />
                                     <TextField fx:id="signupPassword" cache="true" layoutX="168.0" layoutY="301.0" promptText="Password" style="-fx-border-color: #243557;" />

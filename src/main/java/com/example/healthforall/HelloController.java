@@ -8,6 +8,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+import javafx.scene.Parent;
+>>>>>>> Stashed changes
 =======
 import javafx.scene.Parent;
 >>>>>>> Stashed changes
@@ -110,6 +114,7 @@ public class HelloController{
     @FXML
     private Label registerMessage;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     @FXML
     protected void signIn()
     {
@@ -135,6 +140,9 @@ public class HelloController{
             info.setText(" Utilisateur non existant ");
         }
     }
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
