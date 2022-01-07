@@ -15,7 +15,7 @@
 
 <AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.CovidTestController">
    <children>
-      <ImageView fitHeight="680.0" fitWidth="814.0" layoutX="4.0" layoutY="61.0" opacity="0.5" pickOnBounds="true">
+      <ImageView fitHeight="680.0" fitWidth="814.0" layoutX="4.0" layoutY="63.0" opacity="0.5" pickOnBounds="true">
          <image>
             <Image url="@../../../images/test-rapides_illus_web.jpg" />
          </image>
@@ -96,7 +96,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent11" />
+            <ToggleGroup fx:id="symptomeFrequent2" />
          </toggleGroup>
       </RadioButton>
       <RadioButton layoutX="442.0" layoutY="213.0" mnemonicParsing="false" text="Non" textFill="#243557">
@@ -104,7 +104,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent11" />
+            <ToggleGroup fx:id="symptomeFrequen2" />
          </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="257.0" selectionFill="#0d50d7" />
@@ -118,16 +118,13 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent111" />
+            <ToggleGroup fx:id="symptomeFrequent3" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="379.0" layoutY="244.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="379.0" layoutY="244.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent3">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent112" />
-         </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="285.0" selectionFill="#0d50d7" />
       <Label layoutX="39.0" layoutY="270.0" prefHeight="21.0" prefWidth="340.0" text="Avez vous une perte de l'odorat ou du gout ?" textFill="#243557">
@@ -140,16 +137,13 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent1111" />
+            <ToggleGroup fx:id="symptomeFrequent4" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="454.0" layoutY="272.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="454.0" layoutY="272.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeFrequent4">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent1121" />
-         </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="313.0" selectionFill="#0d50d7" />
       <Label layoutX="39.0" layoutY="298.0" prefHeight="21.0" prefWidth="340.0" text="Vous avez mal a la gorge ? " textFill="#243557">
@@ -162,7 +156,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent11111" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent1" />
          </toggleGroup>
       </RadioButton>
       <RadioButton layoutX="342.0" layoutY="300.0" mnemonicParsing="false" text="Non" textFill="#243557">
@@ -170,7 +164,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent11211" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent2" />
          </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="341.0" selectionFill="#0d50d7" />
@@ -184,7 +178,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent111111" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent3" />
          </toggleGroup>
       </RadioButton>
       <RadioButton layoutX="382.0" layoutY="328.0" mnemonicParsing="false" text="Non" textFill="#243557">
@@ -192,7 +186,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent112111" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent4" />
          </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="375.0" selectionFill="#0d50d7" />
@@ -201,21 +195,18 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="323.0" layoutY="356.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton layoutX="287.0" layoutY="362.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent1111111" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent5" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="388.0" layoutY="356.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="360.0" layoutY="362.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent5">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent1121111" />
-         </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="408.0" selectionFill="#0d50d7" />
       <Label layoutX="41.0" layoutY="390.0" prefHeight="21.0" prefWidth="379.0" text="Avez vous la diarhee lorsque vous allez au sel ?" textFill="#243557">
@@ -228,16 +219,13 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent11111111" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent6" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="472.0" layoutY="393.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="472.0" layoutY="393.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent6">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent11211111" />
-         </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="435.0" selectionFill="#0d50d7" text="" />
       <Label layoutX="41.0" layoutY="419.0" prefHeight="21.0" prefWidth="585.0" text="Avez vous des eruptions cutanees ou decoloration des doigts ou des orteils ?" textFill="#243557">
@@ -250,16 +238,13 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent111111111" />
+            <ToggleGroup fx:id="symptomeMoinsFrequent7" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="697.0" layoutY="422.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="697.0" layoutY="422.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeMoinsFrequent7">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent112111111" />
-         </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="458.0" selectionFill="#0d50d7" text="" />
       <Label layoutX="41.0" layoutY="442.0" prefHeight="21.0" prefWidth="452.0" text="Avez vous des difficultes a respirer ou essouflement ? " textFill="#243557">
@@ -267,21 +252,18 @@
             <Font name="Consolas Bold Italic" size="14.0" />
          </font>
       </Label>
-      <RadioButton layoutX="473.0" layoutY="438.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+      <RadioButton layoutX="472.0" layoutY="444.0" mnemonicParsing="false" text="Oui" textFill="#243557">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent1111111111" />
+            <ToggleGroup fx:id="symptomeGrave1" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="538.0" layoutY="438.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="538.0" layoutY="445.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave1">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent1121111111" />
-         </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="481.0" selectionFill="#0d50d7" text="" />
       <Label layoutX="41.0" layoutY="465.0" prefHeight="21.0" prefWidth="624.0" text="Ressentez vous des pertes d'elocutions ou de motricites ou bien des confusions ? " textFill="#243557">
@@ -294,16 +276,13 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent11111111111" />
+            <ToggleGroup fx:id="symptomeGrave2" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="719.0" layoutY="468.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="719.0" layoutY="468.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave2">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent11211111111" />
-         </toggleGroup>
       </RadioButton>
       <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="502.0" selectionFill="#0d50d7" text="" />
       <Label layoutX="39.0" layoutY="488.0" prefHeight="21.0" prefWidth="402.0" text="Vous avez des douleurs au niveau de la poitrine ? " textFill="#243557">
@@ -316,18 +295,20 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
          <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent111111111111" />
+            <ToggleGroup fx:id="symptomeGrave3" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="493.0" layoutY="489.0" mnemonicParsing="false" text="Non" textFill="#243557">
+      <RadioButton layoutX="493.0" layoutY="489.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptomeGrave3">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="symptomeFrequent112111111111" />
-         </toggleGroup>
       </RadioButton>
-      <Button layoutX="268.0" layoutY="566.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="272.0" style="-fx-background-color: #243557;" text="V A L I D E R " textFill="WHITE">
+      <Button layoutX="268.0" layoutY="566.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="272.0" style="-fx-background-color: #243557;" text="V A L I D E R     L E      F O R M U L A I R E " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="268.0" layoutY="634.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="272.0" style="-fx-background-color: #243557;" text="A N N U L E R       L E      F O R M U L A I R E " textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>
