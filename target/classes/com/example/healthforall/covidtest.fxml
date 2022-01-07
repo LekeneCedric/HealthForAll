@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.CovidTestController">
    <children>
-      <Label alignment="CENTER" prefHeight="52.0" prefWidth="814.0" style="-fx-background-color: #243557;" text="TEST COVID" textAlignment="JUSTIFY">
+      <ImageView fitHeight="680.0" fitWidth="814.0" layoutY="61.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/test-rapides_illus_web.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" opacity="0.8" prefHeight="61.0" prefWidth="814.0" style="-fx-background-color: #243557;" text="TEST COVID-19" textAlignment="JUSTIFY">
          <font>
             <Font name="Consolas Italic" size="26.0" />
          </font>
@@ -28,5 +35,50 @@
             </LinearGradient>
          </textFill>
       </Label>
+      <Label layoutX="14.0" layoutY="76.0" prefHeight="17.0" prefWidth="96.0" text="Consigne :" textFill="#243557" underline="true">
+         <font>
+            <Font name="Consolas Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="105.0" prefHeight="21.0" prefWidth="688.0" text="Repondez de maniere precises aux questions suivantes afin d'effectuer un test de COVID-19">
+         <font>
+            <Font name="Consolas Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="126.0" prefHeight="21.0" prefWidth="775.0" text="(vous allez repondre pas (oui / non ) Plus vos questions sont precises plus  votre bilan est fiable)" textFill="#717479">
+         <font>
+            <Font name="Consolas Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="76.0" prefHeight="21.0" prefWidth="132.0" text="B I EN V E N U E ">
+         <font>
+            <Font name="Consolas Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nompatientcovid" layoutX="257.0" layoutY="76.0" prefHeight="21.0" prefWidth="132.0" textFill="#4015c3">
+         <font>
+            <Font name="Consolas Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="178.0" prefHeight="21.0" prefWidth="237.0" text="Avez vous de la fievre  ? " textFill="#243557">
+         <font>
+            <Font name="Consolas Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView />
+      <FontAwesomeIconView glyphName="TAGS" layoutX="14.0" layoutY="193.0" selectionFill="#0d50d7" />
+      <RadioButton layoutX="276.0" layoutY="182.0" mnemonicParsing="false" text="Oui" textFill="#243557">
+         <toggleGroup>
+            <ToggleGroup fx:id="symptome1" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="367.0" layoutY="182.0" mnemonicParsing="false" text="Non" textFill="#243557" toggleGroup="$symptome1">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
    </children>
 </AnchorPane>
