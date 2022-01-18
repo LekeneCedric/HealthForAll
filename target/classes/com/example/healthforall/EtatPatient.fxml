@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="751.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.EtatPatientController">
+   <children>
+      <TableView fx:id="BilanTable" layoutY="103.0" prefHeight="648.0" prefWidth="799.0">
+        <columns>
+          <TableColumn fx:id="idPCol" prefWidth="176.0" style="-fx-alignment: center;" text="ID PATIENT" />
+          <TableColumn fx:id="codeBilCol" minWidth="1.0" prefWidth="164.0" style="-fx-alignment: center;" text="CODE BILAN" />
+            <TableColumn fx:id="dateCol" prefWidth="139.0" style="-fx-alignment: center;" text="DATE" />
+            <TableColumn fx:id="descriptionCol" minWidth="0.0" prefWidth="153.0" style="-fx-alignment: center;" text="DESCRIPTION" />
+            <TableColumn fx:id="consulterCol" minWidth="0.0" prefWidth="172.0" style="-fx-alignment: center;" text="CONSULTER" />
+        </columns>
+      </TableView>
+      <Button layoutX="62.0" layoutY="44.0" mnemonicParsing="false" onAction="#AddBilan" style="-fx-background-color: #e1ebdf;" text="Nouvelle Consultation" textFill="#597c54">
+
+      </Button>
+      <Button layoutX="249.0" layoutY="44.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #e1ebdf;" text="Refresh" textFill="#62835e">
+
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="30.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/plus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="217.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/refresh.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="BilanDescription" layoutX="389.0" layoutY="6.0" prefHeight="91.0" prefWidth="409.0" style="-fx-border-color: #769e71;" textFill="#769e71">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

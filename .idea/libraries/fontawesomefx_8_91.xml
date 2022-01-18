@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="fontawesomefx-8.91">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/fontawesomefx-commons-9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/fontawesomefx-fontawesome-4.7.0-9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/mysql-connector-java-8.0.27.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.web.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
