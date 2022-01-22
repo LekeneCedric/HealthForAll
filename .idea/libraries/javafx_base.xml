@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="javafx.base">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/javafx.web.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
