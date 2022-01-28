@@ -9,23 +9,18 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.MainController">
    <children>
-      <BorderPane fx:id="borderPane" layoutY="-3.0" prefHeight="741.0" prefWidth="1107.0">
+      <BorderPane fx:id="borderPane" layoutY="-3.0" prefHeight="734.0" prefWidth="1107.0">
          <left>
-            <AnchorPane prefHeight="741.0" prefWidth="283.0" style="-fx-background-color: #243557;" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="715.0" prefWidth="73.0" style="-fx-background-color: #243557;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="1.0" layoutY="260.0" mnemonicParsing="false" onAction="#bilanSante" prefHeight="55.0" prefWidth="295.0" style="-fx-background-color: #fff;" stylesheets="@css/style.css" text="Bilan de Sante" textFill="#243557">
+                  <Button layoutX="-6.0" layoutY="387.0" mnemonicParsing="false" onAction="#prescriptions" prefHeight="51.0" prefWidth="303.0" style="-fx-background-color: #fff;" stylesheets="@css/style.css" text="   Prescriptions Medicales" textFill="#243557">
                      <font>
                         <Font name="System Bold Italic" size="20.0" />
                      </font>
                   </Button>
-                  <Button layoutX="1.0" layoutY="360.0" mnemonicParsing="false" onAction="#traitementPage" prefHeight="51.0" prefWidth="295.0" style="-fx-background-color: #fff;" stylesheets="@css/style.css" text="Traitements  " textFill="#243557">
-                     <font>
-                        <Font name="System Bold Italic" size="20.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="1.0" layoutY="446.0" mnemonicParsing="false" onAction="#prescriptions" prefHeight="51.0" prefWidth="295.0" style="-fx-background-color: #fff;" stylesheets="@css/style.css" text="   Prescriptions Medicales" textFill="#243557">
+                  <Button layoutX="-10.0" layoutY="260.0" mnemonicParsing="false" onAction="#bilanSante" prefHeight="55.0" prefWidth="307.0" style="-fx-background-color: #fff;" stylesheets="@css/style.css" text="Bilan de Sante" textFill="#243557">
                      <font>
                         <Font name="System Bold Italic" size="20.0" />
                      </font>
@@ -40,11 +35,11 @@
                         <Font name="System Bold Italic" size="42.0" />
                      </font>
                   </Label>
-                  <Label fx:id="username" layoutX="133.0" layoutY="212.0" prefHeight="30.0" prefWidth="108.0" textFill="#bcd1da">
-                     <font>
-                        <Font name="System Bold Italic" size="20.0" />
-                     </font>
-                  </Label>
+<!--                  <Label fx:id="username" layoutX="133.0" layoutY="212.0" prefHeight="30.0" prefWidth="108.0" textFill="#bcd1da">-->
+<!--                     <font>-->
+<!--                        <Font name="System Bold Italic" size="20.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
                   <ImageView fitHeight="152.0" fitWidth="174.0" layoutX="73.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/patient.png" />
@@ -55,12 +50,7 @@
                         <Image url="@images/heart-attack.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="28.0" fitWidth="35.0" layoutX="42.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/prescription.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="16.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="17.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/stethoscope-tool.png" />
                      </image>
@@ -70,21 +60,16 @@
                         <Image url="@images/logout.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="1.0" layoutY="527.0" mnemonicParsing="false" onAction="#testcovid" prefHeight="51.0" prefWidth="295.0" style="-fx-background-color: #fff;" stylesheets="@css/style.css" text="Test Covid" textFill="#243557">
+                  <Button layoutX="-4.0" layoutY="514.0" mnemonicParsing="false" onAction="#testcovid" prefHeight="51.0" prefWidth="301.0" style="-fx-background-color: #fff;" stylesheets="@css/style.css" text="Test Covid" textFill="#243557">
                      <font>
                         <Font name="System Bold Italic" size="20.0" />
                      </font>
                   </Button>
-                  <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="43.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="43.0" layoutY="526.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/coronavirus.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="30.0" layoutY="215.0" prefHeight="31.0" prefWidth="207.0" text="Bienvenue chez Nous " textFill="WHITE">
-                     <font>
-                        <Font name="System Bold Italic" size="20.0" />
-                     </font>
-                  </Label>
                   <Label layoutX="100.0" layoutY="18.0" prefHeight="30.0" prefWidth="133.0" text="ealth for All" textFill="WHITE">
                      <font>
                         <Font name="System Bold Italic" size="20.0" />
@@ -95,11 +80,11 @@
                         <Image url="@images/icons8_sun_48px_2.png" />
                      </image>
                   </ImageView>
-                  <ImageView layoutX="233.0" layoutY="203.0">
-                     <image>
-                        <Image url="@images/smile.png" />
-                     </image>
-                  </ImageView>
+                  <Label fx:id="AccueilName" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="215.0" prefHeight="38.0" prefWidth="209.0" text="Bienvenue" textAlignment="JUSTIFY" textFill="#00cdff">
+                     <font>
+                        <Font name="System Bold Italic" size="26.0" />
+                     </font>
+                  </Label>
                </children>
                <BorderPane.margin>
                   <Insets />

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.prescriptionController">
+<AnchorPane prefHeight="741.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.MainController">
    <children>
       <Label alignment="CENTER" layoutX="162.0" layoutY="14.0" prefHeight="46.0" prefWidth="506.0" text="P R E S C R I P T I O N   M E D I C A L E " textFill="#2d5b8d" underline="true">
          <font>
@@ -30,7 +30,7 @@
                 <TableColumn fx:id="codePatient" prefWidth="100.0" text="CODE PATIENT " />
                   <TableColumn fx:id="codeDocteur" prefWidth="99.0" text="CODE DOCTEUR" />
                   <TableColumn fx:id="dateBilan" prefWidth="139.0" text="DATE PRESCRIPTION" />
-                  <TableColumn fx:id="DescriptionPrescription" prefWidth="345.0" text=" PRESCRIPTION" />
+                  <TableColumn fx:id="DescriptionPrescription" editable="false" prefWidth="345.0" text=" PRESCRIPTION" />
               </columns>
             </TableView>
          </children>

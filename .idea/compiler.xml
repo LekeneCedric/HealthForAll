@@ -13,4 +13,9 @@
       <module name="HealthForAll" target="17" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="HealthForAll" options="--add-exports java.base/java=HealthForAll" />
+    </option>
+  </component>
 </project>

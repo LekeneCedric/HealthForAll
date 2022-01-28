@@ -1,11 +1,18 @@
 package com.example.healthforall;
 
+import com.example.healthforall.Models.Prescription;
+import com.example.healthforall.Models.Traitement;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -15,9 +22,11 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.net.URL;
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ResourceBundle;
 
 public class MainController {
     static int tentative=0;
@@ -36,8 +45,14 @@ public class MainController {
     public Label message;
     public AnchorPane PrincipalScreen;
     static Label username;
+    static String pass;
+    static String Name ;
+    @FXML
+    public  Label AccusalName;
 
-
+    public void initialize() {
+        loadList();
+    }
     public void switchinscription(ActionEvent actionEvent) throws IOException {
 
         AnchorPane pane= FXMLLoader.load(getClass().getResource("signup.fxml"));
@@ -63,6 +78,9 @@ public int connexion(ActionEvent actionEven) throws IOException {
         String nom = signinUsername.getText();
         String password = signinPassword.getText();
         String loginname = nom;
+        pass = password;
+        Name = nom;
+
 
 
         if(nom != "" & password != "")
@@ -76,6 +94,9 @@ public int connexion(ActionEvent actionEven) throws IOException {
                     Parent root = FXMLLoader.load(getClass().getResource("home-view.fxml"));
                     Stage windows = (Stage) inscrivezvous.getScene().getWindow();
                     windows.setScene(new Scene(root));
+
+
+
 
                 }
                 else if(tentative==2)
@@ -120,10 +141,16 @@ public int connexion(ActionEvent actionEven) throws IOException {
     {
         System.out.println(e);
     }
+
+    setWelcomeName();
     return 0;
 
-
 }
+public void setWelcomeName()
+{
+    AccusalName.setText(Name);
+}
+
 
     public void inscription(ActionEvent actionEvent) {
         String nom = signupNom.getText();
@@ -272,5 +299,118 @@ public int connexion(ActionEvent actionEven) throws IOException {
             System.out.println(e);
         }
     }
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
-}
+        @FXML
+        public TableColumn<Traitement,String> codePatient;
+        @FXML
+        public TableColumn <Traitement,String> dateBilan;
+        @FXML
+        public TableColumn <Traitement,Integer> idPrescription;
+        @FXML
+        public TableColumn <Traitement,String> codeDocteur;
+        @FXML
+        public TableColumn <Traitement,String> DescriptionPrescription;
+        @FXML
+        public TableView PrescriptionTable;
+        public TextField codeP;
+
+        ObservableList<Prescription> PrescriptionList= FXCollections.observableArrayList();
+
+
+
+        private void loadList() {
+            refreahPrescription();
+            try {
+                idPrescription.setCellValueFactory(new PropertyValueFactory<>("ID"));
+                codeDocteur.setCellValueFactory(new PropertyValueFactory<>("codeDoc"));
+                codePatient.setCellValueFactory(new PropertyValueFactory<>("codeP"));
+                dateBilan.setCellValueFactory(new PropertyValueFactory<>("date"));
+                DescriptionPrescription.setCellValueFactory(new PropertyValueFactory<>("Description"));
+            }
+            catch (Exception e )
+            {
+                System.out.println(e);
+            }
+
+        }
+
+        private void refreahPrescription() {
+            try {
+                String password = pass;
+                PrescriptionList.clear();
+                Class.forName("com.mysql.jdbc.Driver");
+                Connection connexion = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/healthforall", "root", "");
+                Connection connexion2 = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/healthforall", "root", "");
+                Statement stmt = connexion.createStatement();
+                String query1 = "SELECT * FROM `patient` WHERE  PASSWORD LIKE '"+password+"'";
+
+                PreparedStatement prepare1 = connexion.prepareStatement(query1);
+                ResultSet resultSet1 = prepare1.executeQuery();
+
+                    while (resultSet1.next()) {
+                        String query2 = "SELECT * FROM `prescription` WHERE CODEP LIKE '" + resultSet1.getString("CODEP") + "'";
+                        PreparedStatement prepare2 = connexion2.prepareStatement(query2);
+                        ResultSet resultSet2 = prepare2.executeQuery();
+                        while (resultSet2.next()) {
+
+                            PrescriptionList.add(new Prescription(
+                                            resultSet2.getInt("IDPRESCRIPTION"),
+                                            resultSet2.getString("CODEDOC"),
+                                            resultSet2.getString("CODEP"),
+                                            resultSet2.getString("DATE"),
+                                            resultSet2.getString("DESCRIPTIONPRESCRIPTION")
+                                    )
+                            );
+                            PrescriptionTable.setItems(PrescriptionList);
+                        }
+                        prepare2.close();
+                        resultSet2.close();
+                    }
+                    prepare1.close();
+                    resultSet1.close();
+                }
+                catch (Exception e)
+                {
+                    System.out.println(e);
+                }
+
+
+
+        }
+
+        public void refresh(ActionEvent actionEvent) {
+            try {
+
+                String code = codeP.getText();
+                PrescriptionList.clear();
+                Class.forName("com.mysql.jdbc.Driver");
+                Connection connexion = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/healthforall", "root", "");
+                Statement stmt = connexion.createStatement();
+                String query = "SELECT * FROM `prescription` WHERE CODEP LIKE '"+code+"'";
+                PreparedStatement prepare = connexion.prepareStatement(query);
+                ResultSet resultSet = prepare.executeQuery();
+                while (resultSet.next()) {
+
+                    PrescriptionList.add(new Prescription(
+                                    resultSet.getInt("IDPRESCRIPTION"),
+                                    resultSet.getString("CODEDOC"),
+                                    resultSet.getString("CODEP"),
+                                    resultSet.getString("DATE"),
+                                    resultSet.getString("DESCRIPTIONPRESCRIPTION")
+                            )
+                    );
+                    PrescriptionTable.setItems(PrescriptionList);
+                }
+                prepare.close();
+                resultSet.close();
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        }
+    }
+
+
