@@ -80,7 +80,7 @@
                         <Image url="@images/icons8_sun_48px_2.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="AccueilName" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="215.0" prefHeight="38.0" prefWidth="209.0" text="Bienvenue" textAlignment="JUSTIFY" textFill="#00cdff">
+                  <Label fx:id="AccusalName" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="215.0" prefHeight="38.0" prefWidth="209.0" text="Bienvenue" textAlignment="JUSTIFY" textFill="#00cdff">
                      <font>
                         <Font name="System Bold Italic" size="26.0" />
                      </font>

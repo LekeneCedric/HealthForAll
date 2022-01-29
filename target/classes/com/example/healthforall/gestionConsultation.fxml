@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthforall.GestionConsultation">
+    <children>
+        <Label alignment="CENTER" layoutX="162.0" layoutY="14.0" prefHeight="46.0" prefWidth="506.0" text="P R E S C R I P T I O N   M E D I C A L E " textFill="#2d5b8d" underline="true">
+            <font>
+                <Font name="Consolas Bold" size="20.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="62.0" fitWidth="65.0" layoutX="100.0" layoutY="6.0" pickOnBounds="true">
+            <image>
+                <Image url="@images/health-check.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutY="131.0" prefHeight="611.0" prefWidth="811.0">
+            <children>
+                <TableView fx:id="PrescriptionTable" prefHeight="613.0" prefWidth="811.0">
+                    <columns>
+                        <TableColumn fx:id="idPrescription" prefWidth="127.0" text="ID PRESCRIPTION" />
+                        <TableColumn fx:id="codePatient" prefWidth="100.0" text="CODE PATIENT " />
+                        <TableColumn fx:id="codeDocteur" prefWidth="99.0" text="CODE DOCTEUR" />
+                        <TableColumn fx:id="dateBilan" prefWidth="139.0" text="DATE PRESCRIPTION" />
+                        <TableColumn fx:id="DescriptionPrescription" editable="false" prefWidth="345.0" text=" PRESCRIPTION" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="340.0" layoutY="84.0" text="Consigne:" textFill="#2d5b8d" underline="true">
+            <font>
+                <Font name="Consolas Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="429.0" layoutY="63.0" prefHeight="62.0" prefWidth="340.0" text="Vous pouvez ainsi consulter vos differents bilan (Chacun etant caracterise par la date de Prescription)" textFill="#788797" wrapText="true">
+            <font>
+                <Font name="Consolas Italic" size="13.0" />
+            </font>
+        </Label>
+        <Button layoutX="190.0" layoutY="81.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #82a6cd;" text="Refresh Prescriptions" textFill="#183351" />
+        <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="149.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/refresh.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="codeP" layoutX="15.0" layoutY="82.0" prefHeight="25.0" prefWidth="127.0" promptText="Code Patient">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </TextField>
+      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="758.0" layoutY="14.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logout.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

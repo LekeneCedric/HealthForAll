@@ -175,4 +175,19 @@ public class EtatPatientController implements Initializable {
     }
 
 
+    public void GestionConsultation(ActionEvent actionEvent) {
+        try{
+            Parent parent = FXMLLoader.load(getClass().getResource("gestionConsultation.fxml"));
+            Scene scene = new Scene(parent);
+            scene.setFill(Color.TRANSPARENT);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            stage.show();
+        }
+        catch (Exception e)
+        {
+            System.out.println("Erreur lors du chargement de la page ");
+        }
+    }
 }

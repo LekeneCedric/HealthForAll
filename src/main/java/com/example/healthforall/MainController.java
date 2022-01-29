@@ -50,8 +50,20 @@ public class MainController {
     @FXML
     public  Label AccusalName;
 
+
     public void initialize() {
-        loadList();
+        try {
+            loadList();
+
+        }
+        catch (Exception ex)
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Loading error ");
+            alert.setHeaderText(null);
+            alert.setContentText(ex.getMessage());
+            alert.showAndWait();
+        }
     }
     public void switchinscription(ActionEvent actionEvent) throws IOException {
 
@@ -142,14 +154,11 @@ public int connexion(ActionEvent actionEven) throws IOException {
         System.out.println(e);
     }
 
-    setWelcomeName();
+
     return 0;
 
 }
-public void setWelcomeName()
-{
-    AccusalName.setText(Name);
-}
+
 
 
     public void inscription(ActionEvent actionEvent) {
@@ -187,11 +196,11 @@ public void setWelcomeName()
                 alert.setContentText("Utilisateur enregistrer avec Success");
                 alert.showAndWait();
 
-            } catch (Exception e) {
+            } catch (Exception ex) {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Inscription");
                 alert.setHeaderText(null);
-                alert.setContentText("Erreur lors de l'inscription de l'utilisateur");
+                alert.setContentText("Utilisateur existant ou champs mal remplis ");
                 alert.showAndWait();
             }
         }
@@ -302,18 +311,18 @@ public void setWelcomeName()
     /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
         @FXML
-        public TableColumn<Traitement,String> codePatient;
+        public  TableColumn<Traitement,String> codePatient;
         @FXML
         public TableColumn <Traitement,String> dateBilan;
         @FXML
-        public TableColumn <Traitement,Integer> idPrescription;
+        public  TableColumn <Traitement,Integer> idPrescription;
         @FXML
-        public TableColumn <Traitement,String> codeDocteur;
+        public  TableColumn <Traitement,String> codeDocteur;
         @FXML
-        public TableColumn <Traitement,String> DescriptionPrescription;
+        public  TableColumn <Traitement,String> DescriptionPrescription;
         @FXML
-        public TableView PrescriptionTable;
-        public TextField codeP;
+        public  TableView PrescriptionTable;
+        public  TextField codeP;
 
         ObservableList<Prescription> PrescriptionList= FXCollections.observableArrayList();
 

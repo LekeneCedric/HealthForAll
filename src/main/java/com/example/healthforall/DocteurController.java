@@ -179,6 +179,7 @@ public class DocteurController {
     }
 
     public void inscriptions(ActionEvent actionEvent) {
+        try{
         String nom = signupNomDocteur.getText();
         String prenom = signupPrenomDocteur.getText();
         int numero = Integer.parseInt(signupNumeroDocteur.getText());
@@ -223,6 +224,13 @@ public class DocteurController {
                 alert.setContentText("Utilisateur deja existant dans la base de donnee ! ");
                 alert.showAndWait();
             }
+        }}
+        catch (Exception ex) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Inscription");
+            alert.setHeaderText(null);
+            alert.setContentText(ex.getMessage());
+            alert.showAndWait();
         }
     }
 

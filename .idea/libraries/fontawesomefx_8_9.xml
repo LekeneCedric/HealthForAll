@@ -4,6 +4,7 @@
       <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/fontawesomefx-8.9.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/fontawesomefx-commons-9.1.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/fontawesomefx-fontawesome-4.7.0-9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/com/example/healthforall/lib/mysql-connector-java-8.0.27.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
